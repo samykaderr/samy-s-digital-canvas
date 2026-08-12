@@ -12,7 +12,7 @@ function Knot() {
   });
 
   return (
-    <TorusKnot ref={mesh} args={[1.15, 0.34, 220, 32]}>
+    <TorusKnot ref={mesh} args={[1.05, 0.3, 140, 20]}>
       <meshBasicMaterial wireframe color="#6d8bff" />
     </TorusKnot>
   );
