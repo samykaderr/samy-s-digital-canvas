@@ -115,11 +115,7 @@ export function Projects() {
 
       <div className="grid gap-5 lg:grid-cols-2">
         {projects.map((p, i) => (
-          <Reveal
-            key={p.name}
-            delay={i * 0.06}
-            className={p.featured ? "lg:col-span-2" : undefined}
-          >
+          <Reveal key={p.name} delay={i * 0.06} className={p.featured ? "lg:col-span-2" : ""}>
             <motion.div className="h-full">
               <TiltCard project={p} />
             </motion.div>
